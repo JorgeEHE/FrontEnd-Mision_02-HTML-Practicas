@@ -11,30 +11,33 @@
 	<title>Bienvenidos a cakezzle, ármalo a tu antojo!</title>
 
 	<!-- Start Global CSS -->
-	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<!-- Start Normalize CSS -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<!-- Start Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/pedidos.css">
+    <link rel="stylesheet" type="text/css" href="css/inventario.css">
+    <!-- Start Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 
 <body>
 	<article>
 		<!-- Start Header Section -->
-		<header>
-			<img id="logo" src="images/icon.png" alt="Logo cakezzle" width="70" height="70">
-			<!-- Start Navbar -->
-			<nav class="navegador">
-				<a href="#saboresPan">Sabores de Pan</a>
-				<a href="#decoraciones">Decoraciones </a>
-				<a href="#rellenos">Rellenos </a>
-				<a href="pedidos.html">Pedidos</a>
-				<a href="inventario.html">Inventario</a>
-			</nav><!-- End Navbar -->
-		</header><!-- End Header Section -->
+		<header class="bloque2">
+            <nav class="main-nav">
+                <div class=" ">
+                    <ul class="primary">
+                    	<li class=""><a href="#saboresPan">Panes</a></li>
+                    	<li class=""><a href="#rellenos">Relleno</a></li>
+                    	<li class=""><a href="#decoraciones">Decoraciones</a></li>
+                        <li class="inicio"><a href="index.html"><img src="./images/logo.png" alt="cakezzle logo" class="logo" /></a></li>
+                        <li class=""><a href="#accesorios">Accesorios</a></li>
+                        <li class="pedidos"><a href="pedidos.html">Pedidos</a></li>
+                        <li class="inventario"><a href="inventario.html">Dashboard</a></li>
+                    </ul>
+                </div><br>
+            </nav>
+        </header>
+        <!-- End Header Section -->
 		
-
 		<!-- Start Section: About Us -->
 		<div class="aboutUs">
 		<!--<img id="aboutUs" src="images/aus.jpg" alt="imagenFondoInicial"> -->
@@ -42,17 +45,13 @@
 				<h1>
 					<span style="color: aqua;">c</span><span style="color: darkblue;">a</span><span style="color: green;">k</span><span style="color: purple;">e</span><span style="color: yellow;">z</span><span style="color: greenyellow;">z</span><span style="color: red;">l</span><span style="color: skyblue;">e</span>
 				</h1>
-
 				<h2><center>ármalo a tu antojo</center></h2>
-
 			</section>
 		</div>
 		<!-- End Section: About Us -->	
-		
-
 
 		<!-- Start Section: Sabores de Pan-->
-    	<div id="saboresPan" class="ajuste">
+    	<div id="saboresPan" class="ajusteM">
         	<section class="contenedor">
             	<h2 class="nombreSecciones">Sabores de Pan</h2>
             	<ul class="subContenedor">
@@ -63,19 +62,19 @@
                    	 </ul>
                 	</li>
                  <li class="cajasImagen">
-               	     <img src="./images/vainilla.png" alt="pan de chocolate" class="tamImagen">pan de vainilla>
+               	     <img src="./images/vainilla.png" alt="pan de vainilla" class="tamImagen">pan de vainilla>
                	     <ul>
                 	        <li class="precio">$ 300</li>
                    	 </ul>
                 	</li>	
                  <li class="cajasImagen">
-               	     <img src="./images/redvelvet.png" alt="pan de chocolate" class="tamImagen">pan de red velvet>
+               	     <img src="./images/redvelvet.png" alt="pan de red velvet" class="tamImagen">pan de red velvet>
                	     <ul>
                 	        <li class="precio">$ 300</li>
                    	 </ul>
                 	</li>	
                  <li class="cajasImagen">
-               	     <img src="./images/marmoleado.png" alt="pan de chocolate" class="tamImagen">pan de marmoleado>
+               	     <img src="./images/marmoleado.png" alt="pan nmarmoleado" class="tamImagen">pan marmoleado>
                	     <ul>
                 	        <li class="precio">$ 300</li>
                    	 </ul>
@@ -84,64 +83,31 @@
         	</section>
     	</div><!-- End Section: Sabores de Pan-->
     	
-    	<!-- Start Section: Tipos de Adornos-->
-    	<div id="decoraciones" class="ajuste">
-        	<section class="contenedor">
-            	<h2 class="nombreSecciones">Tipos de Adornos</h2>
-            	<ul class="subContenedor">
-               	 <li class="cajasImagen">
-               	     <img src="./images/chispascolores.png" alt="pan de chocolate" class="tamImagen">granilla>
-               	     <ul>
-                	        <li class="precio">$ 50</li>
-                   	 </ul>
-                	</li>
-                 <li class="cajasImagen">
-               	     <img src="./images/chispaschocolate.png" alt="pan de chocolate" class="tamImagen">chispas de chocolate>
-               	     <ul>
-                	        <li class="precio">$ 50</li>
-                   	 </ul>
-                	</li>	
-                 <li class="cajasImagen">
-               	     <img src="./images/betunes.png" alt="pan de chocolate" class="tamImagen">dornos con betún >
-               	     <ul>
-                	        <li class="precio">$ 50</li>
-                   	 </ul>
-                	</li>	
-                 <li class="cajasImagen">
-               	     <img src="./images/frutas.png" alt="pan de chocolate" class="tamImagen">frutas>
-               	     <ul>
-                	        <li class="precio">$ 50</li>
-                   	 </ul>
-                	</li>		
-            	</ul>
-        	</section>
-    	</div><!-- End Section: Tipos de Adornos-->
-
     	<!-- Start Section: Tipos de rellenos-->
-    	<div id="rellenos" class="ajuste">
+    	<div id="rellenos" class="ajusteM">
         	<section class="contenedor">
             	<h2 class="nombreSecciones">Rellenos entre capas</h2>
             	<ul class="subContenedor">
                	 <li class="cajasImagen">
-               	     <img src="./images/mermeladas.png" alt="pan de chocolate" class="tamImagen">mermeladas>
+               	     <img src="./images/mermeladas.png" alt="mermeladas" class="tamImagen">mermeladas>
                	     <ul>
                 	        <li class="precio">$ 70</li>
                    	 </ul>
                 	</li>
                  <li class="cajasImagen">
-               	     <img src="./images/nutella.png" alt="pan de chocolate" class="tamImagen">nutella>
+               	     <img src="./images/nutella.png" alt="nutella" class="tamImagen">nutella>
                	     <ul>
                 	        <li class="precio">$ 70</li>
                    	 </ul>
                 	</li>	
                  <li class="cajasImagen">
-               	     <img src="./images/crema.png" alt="pan de chocolate" class="tamImagen">crema pastelera>
+               	     <img src="./images/crema.png" alt="crema pastelera" class="tamImagen">crema pastelera>
                	     <ul>
                 	        <li class="precio">$ 70</li>
                    	 </ul>
                 	</li>	
                  <li class="cajasImagen">
-               	     <img src="./images/cajeta.png" alt="pan de chocolate" class="tamImagen">cajeta>
+               	     <img src="./images/cajeta.png" alt="cajeta" class="tamImagen">cajeta>
                	     <ul>
                 	        <li class="precio">$ 70</li>
                    	 </ul>
@@ -150,10 +116,76 @@
         	</section>
     	</div><!-- End Section: Tipos de rellenos-->
 
+    	<!-- Start Section: Tipos de Adornos-->
+    	<div id="decoraciones" class="ajusteM">
+        	<section class="contenedor">
+            	<h2 class="nombreSecciones">Tipos de Decoraciones</h2>
+            	<ul class="subContenedor">
+               	 <li class="cajasImagen">
+               	     <img src="./images/chispascolores.png" alt="granilla" class="tamImagen">granilla>
+               	     <ul>
+                	        <li class="precio">$ 50</li>
+                   	 </ul>
+                	</li>
+                 <li class="cajasImagen">
+               	     <img src="./images/chispaschocolate.png" alt="chispas de chocolate" class="tamImagen">chispas de chocolate>
+               	     <ul>
+                	        <li class="precio">$ 50</li>
+                   	 </ul>
+                	</li>	
+                 <li class="cajasImagen">
+               	     <img src="./images/betunes.png" alt="betunes" class="tamImagen">adornos con betún >
+               	     <ul>
+                	        <li class="precio">$ 50</li>
+                   	 </ul>
+                	</li>	
+                 <li class="cajasImagen">
+               	     <img src="./images/frutas.png" alt="frutas" class="tamImagen">frutas>
+               	     <ul>
+                	        <li class="precio">$ 50</li>
+                   	 </ul>
+                	</li>		
+            	</ul>
+        	</section>
+    	</div><!-- End Section: Tipos de Adornos-->
+
+    	<!-- Start Section: Tipos de Accesorios-->
+    	<div id="accesorios" class="ajusteM">
+        	<section class="contenedor">
+            	<h2 class="nombreSecciones">Tipos de Accesorios</h2>
+            	<ul class="subContenedor">
+               	 <li class="cajasImagen">
+               	     <img src="./images/velachispas.png" alt="vela de chispas" class="tamImagen">Vela de Chispas>
+               	     <ul>
+                	        <li class="precio">$ 50</li>
+                   	 </ul>
+                	</li>
+                 <li class="cajasImagen">
+               	     <img src="./images/velanumero.png" alt="vela de numeros" class="tamImagen">vela de números>
+               	     <ul>
+                	        <li class="precio">$ 50</li>
+                   	 </ul>
+                	</li>	
+                 <li class="cajasImagen">
+               	     <img src="./images/otros.png" alt="otros" class="tamImagen">cintas y globos>
+               	     <ul>
+                	        <li class="precio">$ 50</li>
+                   	 </ul>
+                	</li>	
+                 <li class="cajasImagen">
+               	     <img src="./images/frases.png" alt="banderilla frases" class="tamImagen">banderilla con frases>
+               	     <ul>
+                	        <li class="precio">$ 50</li>
+                   	 </ul>
+                	</li>		
+            	</ul>
+        	</section>
+    	</div><!-- End Section: Tipos de Accesorios-->
     </div>
 
-
-
+    <div class="bloque2 ajuste">
+    	<button><a href="pedidos.html">Hacer Pedidos</a></button>
+    </div>
 	</article>
 </body>
 </html>

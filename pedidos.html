@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,126 +11,155 @@
 	<title>Bienvenidos a cakezzle, ármalo a tu antojo!</title>
 
 	<!-- Start Global CSS -->
-	<link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/pedidos.css">
+    <link rel="stylesheet" type="text/css" href="css/inventario.css">
+    <!-- Start Normalize CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 
 <body>
 	<article>
-	<!-- Start Section: Header -->
-		<div>
-		<header>
-			<a href="index.html">
-				<img id="logo" src="images/icon.png" alt="Logo cakezzle" width="70" height="70"></a>
-			<nav class="navegador">
-				<a href="index.html">Inicio</a>
-				<a href="pedidos.html">Pedidos</a>
-				<a href="inventario.html">Inventario</a>
-			</nav><!-- End Navbar -->
-		</header><!-- End Header Section -->
-		</div>	
-		
-		<div id="armalo" class="ajuste">
-			<h1>Ármalo a tu antojo</h1><br>
-		<form> 
-			<!-- Start Section: Sabores de Pan-->
-			<div id="saborPan" class="ajusteC bordeCaja">
-				<fieldset>
-    				<h2>Selecciona el sabor del pan</h2>
-    				<ul><b>
-        				<input type="radio" name="panChocolate" id="panChocolate" value="panChocolate">
-        				<label for="panChocolate">Pan de Chocolate</label><br>
-        				<input type="radio" name="panVainilla" id="panVainilla" value="panVainilla">
-       	 				<label for="panVainilla">Pan de Vainilla</label><br>
-        				<input type="radio" name="panMarmoleado" id="panMarmoleado" value="panMarmoleado">
-        				<label for="panMarmoleado">Pan Marmoleado</label><br>
-        				<input type="radio" name="panRedVelvet" id="panRedVelvet" value="panRedVelvet">
-        				<label for="panRedVelvet">Pan Red Velvet</label><br>
-         				<label for="otroPan">Otro sabor de Pan: </label>
-						<input type="text" name="otroPan" id="otroPan" placeholder="especifica el sabor"><br><br>
-    				</ul></b>
-    			</fieldset>
-    		</div>
+		<!-- Start Section: Header -->
+		<header class="bloque2">
+            <nav class="main-nav">
+                <div class=" ">
+                    <ul class="primary">
+                        <li class="pedidos underline"><a href="pedidos.html">Pedidos</a></li>
+                        <li class="inicio"><a href="index.html"><img src="./images/logo.png" alt="cakezzle logo" class="logo" /></a></li>
+                        <li class="inventario"><a href="inventario.html">Dashboard</a></li>
+                    </ul>
+                </div><br>
+            </nav>
+        </header>
+        <!-- End Header Section -->
 
-    		<!-- Start Section: Sabores de Relleno-->
-    		<div id="saborRelleno" class="ajusteC bordeCaja">
-    			<fieldset>
-    				<h2>Selecciona el sabor del relleno</h2>
-    				<ul><b>
-        				<input type="radio" name="mermeladas" id="mermeladas" value="mermeladas">
-        				<label for="mermeladas">Mermelada</label>
-        				<input type="text" name="mermeladas" id="mermeladas" placeholder="especifica el sabor:"><br>
-        				<input type="radio" name="nutella" id="nutella" value="nutella">
-        				<label for="nutella">Nutella</label><br>
-        				<input type="radio" name="cremaPastelera" id="cremaPastelera" value="cremaPastelera">
-        				<label for="cremaPastelera">Crema Pastelera</label><br>
-        				<input type="radio" name="cajeta" id="cajeta" value="cajeta">
-        				<label for="cajeta">cajeta</label><br><br>
-    				</ul></b>
-    			</fieldset>
-    		</div>
+		<div id="armalo" class="ajusteC">
+			<div> <!--  Titulo  -->
+				<h1 class="nombreSecciones">Ármalo a tu antojo</h1>
+			</div>	
 
-    		<!-- Start Section: Tipos de decoración-->
-    		<div id="saborDecoracion" class="ajusteC bordeCaja">
-    			<fieldset>
-    				<h2>Selecciona el tipo de decoración</h2>
-    				<ul><b>
-        				<input type="checkbox" name="granilla" id="granilla" value="granilla">
-        				<label for="granilla">Granilla</label>
-        				<input type="text" name="granilla" id="granilla" placeholder="tipo de granilla"><br>
-        				<input type="checkbox" name="chispasChocolate" id="chispasChocolate" value="chispasChocolate">
-        				<label for="chispasChocolate">Chispas de Chocolate</label>
-        				<input type="text" name="chispasChocolate" id="chispasChocolate" placeholder="Color de las Chispas de Chocolate"><br>
-        				<input type="checkbox" name="betun" id="betun" value="betun">
-        				<label for="betun">Adorno con Betún</label>
-        				<input type="text" name="betun" id="betun" placeholder="describe el adorno que deseas"><br>
-        				<select id="saborBetun">
-        					<option value="" id="">Selecciona una opción...</option>
-            				<optgroup label="Sabores">
-                				<option value="Chocolate">Chocolate</option>
-                				<option value="Vainilla">Vainilla</option>
-                				<option value="Fresa">Fresa</option>
-            				</optgroup>
-            			</select>
-            			<select>
-            				<option value="" id="">Selecciona una opción...</option>	
-            					<optgroup label="Colores">
-              					<option value="rosa">Rosa</option>
-              					<option value="azul">Azul</option>
-                				<option value="blanco">Blanco</option>
-                				<option value="personalizado">Personalizado</option>
-            				</optgroup>
-            			</select><br>	
-			        	<input type="checkbox" name="frutas" id="frutas" value="frutas">
-        				<label for="frutas">frutas</label>
-        				<input type="text" name="frutas" id="frutas" placeholder="esctibe las frutas que deseas"><br><br>
-    				</ul></b>	
-    			</fieldset>
-    		</div>
+			<div class=" bloque">
+				<form>
+					<!-- Start Section: Sabores de Pan-->
+					<div id="saborPan" class="bordeCaja">
+						<fieldset>
+    						<h2>Selecciona el sabor del pan</h2>
+    						<ul><b>
+        						<input type="radio" name="panChocolate" id="panChocolate" value="panChocolate">
+        						<label for="panChocolate">Pan de Chocolate</label><br>
+        						<input type="radio" name="panVainilla" id="panVainilla" value="panVainilla">
+       	 						<label for="panVainilla">Pan de Vainilla</label><br>
+        						<input type="radio" name="panMarmoleado" id="panMarmoleado" value="panMarmoleado">
+        						<label for="panMarmoleado">Pan Marmoleado</label><br>
+        						<input type="radio" name="panRedVelvet" id="panRedVelvet" value="panRedVelvet">
+        						<label for="panRedVelvet">Pan Red Velvet</label><br>
+         						<label for="otroPan">Otro sabor de Pan: </label>
+								<input type="text" name="otroPan" id="otroPan" placeholder="especifica el sabor"><br><br>
+    						</ul></b>
+    					</fieldset>
+    				</div><br>
 
-    		<!-- Start Section: Captura datos de Cliente-->
-    		<div id="datosCliente" class="ajusteC bordeCaja">
-		    	<fieldset id="form">
-        			<h2>introduce tus datos de contacto</h2>
-                	<label for="nombre">Nombre Completo</label><br>
-                	<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br>
-                	<label for="direccion">Dirección de entrega</label><br>
-                	<input type="text" id="direccion" name="direccion" placeholder="Escribenos tu dirección" required><br>
-                	<label for="tel">Telefono</label><br>
-                	<input type="tel" id="telefono" name="telefono" placeholder="Número telefónico" minlength="10" maxlength="10" required> <br>
-                	<label for="email">Correo electrónico</label><br>
-                	<input type="email" id="correo" name="correo" autocomplete="on" placeholder="Escribe tu correo" required> <br>
-                	<label for="fecha">Fecha de entrega:</label><br>
-                	<input type="date" name="fecha" id="fecha" name="fecha"><br>
-                	<label for="mensaje">ármalo a tu antojo:</label><br>
-                	<textarea name="mensaje" id="descripcion" rows="5" placeholder="Describe como quieres que sea tu pastel"></textarea>
-                	<br><br>
-		        	<input type="reset" name="Borrar">
-		        	<input type="submit" name="Enviar Pedido">
-		        	<br><br>
-    			</fieldset><br><br>
-    		</div>
-    	</div>
-    	</form
+    				<!-- Start Section: Sabores de Relleno-->
+    				<div id="saborRelleno" class="ajuste bordeCaja">
+    					<fieldset>
+    						<h2>Selecciona el sabor del relleno</h2>
+    						<ul><b>
+        						<input type="radio" name="mermeladas" id="mermeladas" value="mermeladas">
+        						<label for="mermeladas">Mermelada</label>
+        						<input type="text" name="mermeladas" id="mermeladas" placeholder="especifica el sabor"><br>
+        						<input type="radio" name="nutella" id="nutella" value="nutella">
+        						<label for="nutella">Nutella</label><br>
+        						<input type="radio" name="cremaPastelera" id="cremaPastelera" value="cremaPastelera">
+        						<label for="cremaPastelera">Crema Pastelera</label><br>
+        						<input type="radio" name="cajeta" id="cajeta" value="cajeta">
+        						<label for="Cajeta">cajeta</label><br><br>
+    						</ul></b>
+    					</fieldset>
+    				</div><br>
+
+    				<!-- Start Section: Tipos de decoración-->
+		    		<div id="saborDecoracion" class="ajusteC bordeCaja">
+		    			<fieldset>
+		    				<h2>Selecciona el tipo de decoración</h2>
+		    				<ul><b>
+		        				<input type="checkbox" name="granilla" id="granilla" value="granilla">
+		        				<label for="granilla">Granilla</label>
+		        				<input type="text" name="granilla" id="granilla" placeholder="tipo de granilla"><br>
+		        				<input type="checkbox" name="chispasChocolate" id="chispasChocolate" value="chispasChocolate">
+		        				<label for="chispasChocolate">Chispas de Chocolate</label>
+		        				<input type="text" name="chispasChocolate" id="chispasChocolate" placeholder="Color de las Chispas"><br>
+		        				<input type="checkbox" name="betun" id="betun" value="betun">
+		        				<label for="betun">Adorno con Betún</label>
+		        				<input type="text" name="betun" id="betun" placeholder="describe el adorno"><br>
+		        				<select id="saborBetun">
+		        					<option value="" id="">Selecciona una opción...</option>
+		            				<optgroup label="Sabores">
+		                				<option value="Chocolate">Chocolate</option>
+		                				<option value="Vainilla">Vainilla</option>
+		                				<option value="Fresa">Fresa</option>
+		            				</optgroup>
+		            			</select>
+		            			<select>
+		            				<option value="" id="">Selecciona una opción...</option>	
+		            					<optgroup label="Colores">
+		              					<option value="rosa">Rosa</option>
+		              					<option value="azul">Azul</option>
+		                				<option value="blanco">Blanco</option>
+		                				<option value="personalizado">Personalizado</option>
+		            				</optgroup>
+		            			</select><br>	
+					        	<input type="checkbox" name="frutas" id="frutas" value="frutas">
+		        				<label for="frutas">frutas</label>
+		        				<input type="text" name="frutas" id="frutas" placeholder="esctibe las frutas que deseas"><br><br>
+		    				</ul></b>	
+		    			</fieldset>
+		    		</div><br>
+
+		    		<!-- Start Section: Captura datos de Cliente-->
+		    		<div id="datosCliente" class="ajusteC bordeCaja">
+				    	<fieldset id="form">
+		        			<h2>Introduce tus datos de contacto</h2>
+		        		<b>
+		                	<label for="nombre">Nombre Completo:</label><br>
+		                	<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br>
+		                	<label for="direccion">Dirección de entrega:</label><br>
+		                	<input type="text" id="direccion" name="direccion" placeholder="Escribenos tu dirección" required><br>
+		                	<label for="tel">Telefono:</label><br>
+		                	<input type="tel" id="telefono" name="telefono" placeholder="Número telefónico" minlength="10" maxlength="10" required> <br>
+		                	<label for="email">Correo electrónico:</label><br>
+		                	<input type="email" id="correo" name="correo" autocomplete="on" placeholder="Escribe tu correo" required> <br>
+		                	<label for="fecha">Fecha de entrega:</label><br>
+		                	<input type="date" name="fecha" id="fecha" name="fecha"><br>
+		                	<label for="mensaje">ármalo a tu antojo:</label><br>
+		                	<textarea name="mensaje" id="descripcion" rows="5" placeholder="Describe como quieres que sea tu pastel"></textarea>
+		                </b>
+		    			</fieldset>
+		    		</div>
+
+		    		<div id="botones ajusteC">
+		    			<br>
+				    	<input type="submit" name="Enviar" value="Realizar Pedido">
+				    	<input type="reset" name="Borrar" value="Borrar">
+				    	<br><br><br>
+					</div> 
+
+				</form>
+
+				<div class="ajusteC">
+		            <ul>
+		                <li><img src="./images/pin.png" id="direccion" class="tamIcon"> Dirección: Av. Universidad #317</li>
+		                <li><img src="./images/phone.png" id="telefono" class="tamIcon"> Telefono: 449-1234567</li>
+		                <li><img src="./images/calendar.png" id="horario" class="tamIcon"> Horario: L-V 9am a 7pm, S 10am a 5pm</li>
+		                <li><img src="./images/email.png" id="correo" class="tamIcon"> email: contacto@cakezzle.com</li>
+		            </ul>
+			        <br><br><br>
+		        </div>
+
+			</div>
+
+		</div>
+
     </article>
 </body>
 </html>

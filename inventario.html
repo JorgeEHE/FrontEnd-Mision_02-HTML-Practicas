@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta name="Keywords" content="bakery,pasteles,cupcakes,personalizado">
     <meta name="description" content="Pastelería especializada en la personalizacion de pedidos">
     <meta name="autor" content="jedhi">
@@ -13,39 +12,131 @@
 
     <!-- Start Global CSS -->
     <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/pedidos.css">
+    <link rel="stylesheet" type="text/css" href="css/inventario.css">
     <!-- Start Normalize CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!-- Start Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-
 </head>
+
 <body>
-    
+    <article>
+        <!-- Start Section: New Header -->
+        <header class="bloque2">
+            <nav class="main-nav">
+                <div class=" ">
+                    <ul class="primary">
+                        <li class="pedidos"><a href="pedidos.html">Pedidos</a></li>
+                        <li class="inicio"><a href="index.html"><img src="./images/logo.png" alt="cakezzle logo" class="logo" /></a></li>
+                        <li class="inventario underline"><a href="inventario.html">Dashboard</a></li>
+                    </ul>
+                </div><br>
+            </nav>
+        </header>
+        <!-- End Section: New Header section -->  
+
+        <div id="inventario" class="bloque juaste">
+            <div> <!--  Titulo  -->
+                <h1 class="nombreSecciones">Inventario</h1>
+            </div>
+
+            <div class="bloque2">
+                <div class="bloque3">
+                    <h2>Sabores de pasteles</h2>
+                    <p>Chocolate <progress value="10" max="20"></progress><label>10/20</label></p>
+                    <p>Vainilla <progress value="15" max="20"></progress><label>15/20</label></p>
+                    <p>Red Velvet <progress value="7" max="20"></progress><label>7/20</label></p>    
+                    <p>Marmoleado <progress value="5" max="20"></progress><label>5/20</label></p>
+                </div><br><br>
+               
+                <div class="bloque3">
+                    <h2>Sabores de Rellenos</h2>
+                    <p>Mermeladas <progress value="10" max="20"></progress><label>10/20</label></p>
+                    <p>Nutella <progress value="15" max="20"></progress><label>15/20</label></p>
+                    <p>Crema pastelera <progress value="5" max="20"></progress><label>5/20</label></p>
+                    <p>Cajeta <progress value="7" max="20"></progress><label>7/20</label></p>    
+                </div><br><br>
+                
+                <div class="bloque3">
+                    <h2>Adornos</h2>
+                    <p>Granilla <progress value="10" max="20"></progress><label>10/20</label></p>
+                    <p>Chispas Ch. <progress value="15" max="20"></progress><label>15/20</label></p>
+                    <p>Betunes <progress value="5" max="20"></progress><label>5/20</label></p>
+                    <p>Frutas <progress value="7" max="20"></progress><label>7/20</label></p>    
+                </div>
+                <div class="bloque3">
+                    <h2>Accesorios</h2>
+                    <p>Velas Chispas <progress value="10" max="20"></progress><label>10/20</label></p>
+                    <p>Velas Números <progress value="15" max="20"></progress><label>15/20</label></p>
+                    <p>Cintas y Globos <progress value="5" max="20"></progress><label>5/20</label></p>
+                    <p>Banderillas <progress value="7" max="20"></progress><label>7/20</label></p>    
+                </div>
+            </div>
+        </div><br>
 
 
 
-   <section id="inventario">
-        <h1>Inventario</h1>
-        <h2>Sabores de pasteles</h2>
-        <div>
-            <p>Chocolate<progress value="10" max="20"></progress><label>14/20</label></p>
-            <p>Vainilla<progress value="15" max="20"></progress><label>14/20</label></p>
-            <p>Red Velvet<progress value="7" max="20"></progress><label>14/20</label></p>    
-            <p>Marmoleado<progress value="5" max="20"></progress><label>14/20</label></p>
-        </div><br><br>
-       <h2>Sabores de Rellenos</h2>
-        <div>
-            <p>Mermeladas<progress value="10" max="20"></progress><label>14/20</label></p>
-            <p>Nutella<progress value="15" max="20"></progress><label>14/20</label></p>
-            <p>Crema pastelera<progress value="5" max="20"></progress><label>14/20</label></p>
-            <p>Cajeta<progress value="7" max="20"></progress><label>14/20</label></p>    
-        </div><br><br>
-        <h2>Adornos</h2>
-        <div>
-            <p>Granilla<progress value="10" max="20"></progress><label>14/20</label></p>
-            <p>Chispas de Chocolate<progress value="15" max="20"></progress><label>14/20</label></p>
-            <p>Betunes<progress value="5" max="20"></progress><label>14/20</label></p>
-            <p>Frutas<progress value="7" max="20"></progress><label>14/20</label></p>    
+        <div id="pedidos" class="ajusteC bloque">
+            <div> <!--  Titulo  -->
+                <h1 class="nombreSecciones">Pedidos pendientes de entrega</h1>
+            </div>
+
+            <div class="bloque2">
+                <div class="bloque3">
+                    <table >
+                        <thead>
+                            <!--<div class=""><h2>Pedidos pendientes por entregar</h2></div>-->
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Teléfono</th>
+                                <th>Fecha de Entrega</th>
+                                <th>Descripción del pastel</th>
+                                <th>Direccion de Entrega</th>
+                                <th>Costo Total</th>
+                            </tr>                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-titulo="Nombre:">Karolina Quintana</td>
+                                <td data-titulo="Teléfono:">454-6756112</td>
+                                <td data-titulo="Fecha de entrega:">10-Marzo-2022</td>
+                                <td data-titulo="Descripción pastel:">Pan: Chocolate; Relleno: Nutella; Topping: Betún Chocolate, chispas chocolate negro; Accesorios: Banderilla Felicidades, Vela Chispas</td>
+                                <td data-titulo="Dirección entrega:">Frac. Insurgentes, Calle Emiliano Zapata #234</td>
+                                <td data-titulo="Costo total:">740</td>
+                            </tr>
+
+                            <tr>
+                                <td data-titulo="Nombre:">Halina Olmos</td>
+                                <td data-titulo="Teléfono:">454-6756112</td>
+                                <td data-titulo="Fecha de entrega:">17-Marzo-2022</td>
+                                <td data-titulo="Descripción pastel:">Pan: Vainilla; Relleno: Mermelada Zarzamora; Topping: Betún Vainilla, Granilla multicolor; Accesorios: Banderilla Felicidades, Vela Chispas</td>
+                                <td data-titulo="Dirección entrega:">Frac. Valle Helado, Carretera 80 #101</td>
+                                <td data-titulo="Costo total:">740</td>
+                            </tr>
+
+                            <tr>
+                                <td data-titulo="Nombre:">Mayela Trujillo</td>
+                                <td data-titulo="Teléfono:">454-6756112</td>
+                                <td data-titulo="Fecha de entrega:">23-Marzo-2022</td>
+                                <td data-titulo="Descripción pastel:">Pan: Chocolate; Relleno: Nutella; Topping: Betún Chocolate, chispas chocolate negro; Accesorios: Banderilla Felicidades, Vela Chispas</td>
+                                <td data-titulo="Dirección entrega:">Frac. Insurgentes, Calle Emiliano Zapata #234</td>
+                                <td data-titulo="Costo total:">740</td>
+                            </tr>
+
+                            <tr>
+                                <td data-titulo="Nombre:">Ana Karen Muñoz</td>
+                                <td data-titulo="Teléfono:">454-6756112</td>
+                                <td data-titulo="Fecha de entrega:">23-Marzo-2022</td>
+                                <td data-titulo="Descripción pastel:">Pan: Chocolate; Relleno: Nutella; Topping: Betún Chocolate, chispas chocolate negro; Accesorios: Banderilla Felicidades, Vela Chispas</td>
+                                <td data-titulo="Dirección entrega:">Frac. Boulevares, Calle Enrique Monroy #234</td>
+                                <td data-titulo="Costo total:">740</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div><br><br>
+            </div>
+
         </div>
+    </article>
 </body>
 </html>
