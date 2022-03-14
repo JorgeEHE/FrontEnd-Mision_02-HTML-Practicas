@@ -1,0 +1,65 @@
+
+
+progress{
+	height: 17px;
+    /*box-shadow: 0px 0px 1px 1px rgba( 0, 0, 0, 0.2 );
+    background-color: #f3f5f3; /*rgba(25, 22, 120,0.7);
+    color:rgba(25, 22, 120,0.7);
+    border: 0;
+    height: 1em;
+    border-radius: 9px;
+  */	
+}
+
+
+/******TABLA**********/
+
+/*body{
+	margen: 0px;
+	font-family: Arial;
+}
+
+header{
+	background: rgba(25, 22, 120, 0.50);
+	color: rgba(255, 255, 255, 1.0);
+}*/
+
+table{
+	border-collapse: collapse;
+}
+
+td,th{
+	padding: 5px 10px;
+	border: 1px solid gray;
+}
+
+@media (max-width: 30em){ /*30x16px=480px  para moviles*/
+	table{
+		width: 100%;
+		font-size: 0.9em;
+	}
+	table tr{
+		display: flex;
+		flex-direction: column; /*solo es posible row o column */
+		border: 1px solid gray;
+		padding: 1em;
+		margin-bottom: 1em;
+	}
+	table thead{
+		display: none;
+	}
+	table td[data-titulo]{
+		display: flex;
+	}
+		table td,
+	table th{
+		border: none;
+	}
+		table td[data-titulo]::before{
+		content: attr(data-titulo);
+		width: 90px;
+		font-weight: bold;
+		color: rgba(25, 22, 120, 0.90);
+		padding: 2px 10px;
+	}	
+}

@@ -4,14 +4,6 @@
 ====================================================================================================================================================================
 */
 
-/*
-:root {
-    --nav-cinta: rgb(0, 0, 0);
-    --primario: rgb(255, 102, 196);
-    --precio: rgb(255, 0, 0);
-    --letras: rgb(255, 255, 255);
-}
-*/
 body {
 	font-size: 16;
     font-family: Arial;
@@ -23,42 +15,13 @@ body {
     box-sizing: border-box;
 }
 
-header {
-	position:fixed;
-    background:rgba(25, 22, 120,0.7);
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-	width:100%;
-	height:75px;
-	
-}
-.navegador {
-    display: flex;
-    align-items: center;
-}
-.navegador a:hover {
-    color: rgba(255, 255, 255,1.0);
-    border-bottom: 1px solid rgba(255, 255, 255,1.0);
-}
-
-nav {
-    display: inline-block;
-    margin-left: 400px;
-    margin-top: 20px;
-}
-
-a {
-	color: rgba(255, 255, 255,1.0);
-	text-decoration: none;
-	font-weight: 2em;
-	font-family: Arial;
-	margin-right: 10px;
-    padding: 10px;
-}
-
-a:hover {
-    color: black;
-    background: rgba(147,217,134,0.3);;  
-    padding: 5px;
+/*seccion content*/
+section#content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 250px;
 }
 
 /*seccion AboutUs*/
@@ -66,16 +29,15 @@ a:hover {
     margin: 0 auto;
     position: relative;
 	background-image: url('../images/aus.jpg');
-    top: 76px;
+    top: 0px;
 	width:100%;
-	height:580px;
+	height:660px;
 	opacity: 1.0;
 	background-position: center;
     background-size: cover;
     z-index: 1;
 }
 
-/**/
 .aboutUs h1 {
     /*color: rgba(255, 255, 255,1.0);*/
     font-size: 100px;
@@ -83,7 +45,7 @@ a:hover {
 	font-weight: bold;
     position: absolute;
     left: 75px;
-    top: -150px;
+    top: -100px;
 }
 
 .aboutUs h2 {
@@ -95,17 +57,19 @@ a:hover {
     left: 75px;
     top: 70px;
 }
-/**/
 
-
+/*ajustes de espacio*/
 .ajuste {
-    padding-top: 80px;
+    padding-top: 100px;
 }
-
+.ajusteM {
+    padding-top: 50px;
+}
 .ajusteC {
     padding-top: 10px;
 }
 
+/*formato titulos secciones*/
 .nombreSecciones {
     font-size: 60px;
     font-family: Arial, cursive;
@@ -135,11 +99,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 30px 20px;
     width: 250px;
     height: 250px;
-    box-shadow: 0px 0px 20px 0px rgba(25, 22, 120, 1.0);
+    box-shadow: 0px 0px 20px 10px rgba(25, 22, 120, 1.0);
     border-radius: 5px;
     transition: transfom 1.1s;
 }
@@ -155,26 +119,130 @@ a:hover {
     height: 200px;
 }
 
-
-.bordeCaja {
-    box-shadow: 0 0 20px 0 rgba(25, 22, 120, 1.0);
-    border-radius: 5px;
-	padding: 1em;
+.tamIcon {
+    width: 1em;
+    height: 1em;
 }
 
+.centrar{
+	display: flex;
+    flex-wrap: wrap ;
+	align-items: column;
+    /*justify-content: space-around;*/
+}
 
-bordeCaja h1,h2 {
+.bloque{
+	box-shadow: 0px 0px 0px 0px rgba(25, 225, 120, 1.0);
+    border-radius: 25px;
+    display: flex;
+    align-items: wrap;
+    justify-content: space-around;
+	flex-direction: column;
+    align-items: center;
+}
+
+.bloque2{
+	box-shadow: 0px 0px 0px 0px rgba(250, 22, 120, 1.0);
+    border-radius: 2px;
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	padding: 15px 15px 15px 15px;
+}
+
+.bloque3{
+	box-shadow: 0px 0px 0px 0px rgba(20, 22, 200, 1.0);
+    border-radius: 15px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    justify-content: space-around;
+	padding: 15px 15px 15px 15px;
+	
+}
+
+.bordeCaja {
+    box-shadow: 0px 0px 0px 2px rgba(25, 22, 120, 1.0);
+	padding: 20px 20px;
+	width: 450px;
+	display: flex-wrap;
+	box-sizing: border-box; 
+    border-radius: 5px;
+}
+
+.bordeCaja h1,h2 {
     color: rgba(25, 22, 120, 1.0);
     font-family: Arial;
 	font-weight: bold;
 }
 
+ul {
+    list-style: none;
+	/********************
+	
+	/* como usarlo en linea sin archivo CSS
+	<ul style="list-style: none;">
+		<li>Primer item</li>
+		<li>Segundo item</li>
+		<li>Tercer item</li>
+	</ul>
+		
+	
+	/* type *
+	list-style: square;
+
+	/* image *
+	list-style: url('../img/shape.png');
+
+	/* position *
+	list-style: inside;
+
+	/* type | position *
+	list-style: georgian inside;
+
+	/* type | image | position *
+	list-style: lower-roman url('../img/shape.png') outside;
+
+	/* Keyword value *
+	list-style: none;
+
+	/* Global values *
+	list-style: inherit;
+	list-style: initial;
+	list-style: revert;
+	list-style: unset;
+	
+	/* ejemplo de seteo de listas
+	List 1
+	<ul class="one">
+	  <li>List Item1</li>
+	  <li>List Item2</li>
+	  <li>List Item3</li>
+	</ul>
+	List 2
+	<ul class="two">
+	  <li>List Item A</li>
+	  <li>List Item B</li>
+	  <li>List Item C</li>
+	</ul>
+	Copy to Clipboard
+	CSS
+	.one {
+	  list-style: circle;
+	}
+
+	.two {
+	  list-style: square inside;
+	}
+	
+	*********************/
+}
 
 /*
 ====================================================================================================================================================================
                                                     Images Properties 
 ====================================================================================================================================================================*/
-img#logo { 
+img #logo { 
     margin-left: 50px;
     margin-right: 100px;
     position: absolute;
@@ -182,38 +250,144 @@ img#logo {
     left: 0;
 }
 
-
-
-
-
-
-
-
+/*
+====================================================================================================================================================================
+                                                    Button Properties 
+====================================================================================================================================================================*/
 
 button {
     width: 30%;
-    height: 50px;
-    background: #172035;
-    color: white;
+    height: 60px;
+    background: #09568d;/*#172035;*/
+	border-radius: 30px;
+    text-transform: none;
+	text-decoration: none;
+    /*color: white;*/
     font-size: 2em;
+	font-weight: bold;
     border:none;
 }
 
 button:hover {
-    background: #09568d;
+    /*background: rgba(25, 22, 120,1);*/
+	color: rgba(255, 255, 255, 1.0);
+	text-shadow: 0 0 10px rgba(255,255,255,0.25);
 }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+/*
+button,
+input { /* 1 *
+  overflow: visible;
+}
+*/
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+  
+  /* Valores clave *
+	text-transform: capitalize;
+	text-transform: uppercase;
+	text-transform: lowercase;
+	text-transform: none;
+	text-transform: full-width;
+	** Valores globales **
+	text-transform: inherit;
+	text-transform: initial;
+	text-transform: unset;
+  */
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+/*
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+*/
+
+/**
+ * Remove the inner border and padding in Firefox.
+ *
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+*/
+/**
+ * Restore the focus styles unset by the previous rule.
+ *
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+*/
+
+
+
+/*
+====================================================================================================================================================================
+                                                    H's and others Properties 
+====================================================================================================================================================================*/
 
 h1 {
     font-size: 4em;
 }
-
 h3 {
     font-size: 2em;
 }
-
-p {
-    font-size: 2em;
+h6 {
+	font-size: 1em;
 }
+p {
+    font-size: 1em;
+}
+
+
+/*
+====================================================================================================================================================================
+                                                    Start Footer
+====================================================================================================================================================================
+*/
+
+footer {
+    width: 100%;
+    height: 104px;
+    background: #172035;
+    position: absolute;
+    top: 2500px;
+    left: 0;
+}
+
+p#footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 1em;
+}
+
+
 
 /*
 ====================================================================================================================================================================
